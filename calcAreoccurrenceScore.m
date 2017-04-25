@@ -1,0 +1,16 @@
+function [reoccurrenceScore,AsValidity] = calcAreoccurrenceScore(patches,Airlights,omega)
+patches = permute(patches,[3,4,1,2]);
+tLB1 = returnTransmissionLbasedLowerBound(patches(:,:,:,1),Airlights,false,omega);
+tLB2 = returnTransmissionLbasedLowerBound(patches(:,:,:,2),Airlights,false,omega);
+DCPpatchSize = 5;
+executionStruct.functionName = 'takeMaxInSmallPatch';
+executionStruct.largeArgumentIndicator = [true,false];
+executionStruct.splittingInputDimension = 1;
+executionStruct.splittedOutputsIndicator = true;
+executionStruct.splittingOutputDimension = 1;
+[~,tLB1_propagated] = outOfMemoryResistantExcecution(executionStruct,tLB1,DCPpatchSize);
+[~,tLB2_propagated] = outOfMemoryResistantExcecution(executionStruct,tLB2,DCPpatchSize);
+LminusAs = bsxfun(@rdivide,bsxfun(@minus,patches,Airlights),max(1/255,cat(4,tLB1_propagated,tLB2_propagated)));
+AsValidity = geomean(var(LminusAs(:,:,:,2),0,3)./var(patches(:,:,:,2),0,3),2)>1;
+patchesSTD = std(patches,0,3);
+reoccurrenceScore{4} = sum(sum(bsxfun(@minus,patchesSTD(:,:,:,2)./patchesSTD(:,:,:,1),tLB2_propagated./max(eps,tLB1_propagated)).^2,2),3);
