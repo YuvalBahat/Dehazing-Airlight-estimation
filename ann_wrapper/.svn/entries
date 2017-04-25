@@ -1,0 +1,79 @@
+8
+
+dir
+5413
+https://bleu.uchicago.edu/svn/glasner/code/NNS/ann_wrapper
+https://bleu.uchicago.edu/svn
+
+
+
+2009-07-20T15:02:51.882514Z
+4544
+glasner
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6cef8dec-55ff-4940-a29f-4c3c9aa711db
+
+ann_class_compile.m
+file
+
+
+
+
+2009-10-15T08:21:04.000000Z
+f08b51a9d40a496ab52ecd3b801a01d6
+2009-06-25T01:31:35.579311Z
+4344
+glasner
+
+ann_wrapper.bib
+file
+
+
+
+
+2009-10-15T08:21:04.000000Z
+b1090d256ddc89f918b24908211d938b
+2009-06-25T01:31:35.579311Z
+4344
+glasner
+
+README.txt
+file
+
+
+
+
+2009-10-15T08:21:04.000000Z
+7c7f9eedb0d3cde3869a7b13f7978b2b
+2009-06-25T01:31:35.579311Z
+4344
+glasner
+
+test_ann_class.m
+file
+
+
+
+
+2009-10-15T08:21:04.000000Z
+7347235ebc3d40e91a57458975d86748
+2009-06-25T01:31:35.579311Z
+4344
+glasner
+
+@ann
+dir
+
