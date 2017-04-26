@@ -41,8 +41,8 @@ parameters = struct(...
 
 maxImSize = max(size(orgImage));
 if maxImSize>1500
-    orgImage = imresize(orgImage,600/maxImSize);
-    display(sprintf('Downscaling image by %.2f',600/maxImSize));
+    orgImage = imresize(orgImage,1500/maxImSize);
+    display(sprintf('Downscaling image by %.2f',1500/maxImSize));
 end
 airlightEstimationCode
 Airlight = curAirlightVectEst;
