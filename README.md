@@ -14,6 +14,6 @@ Serially computing the airlight color for all images in the 'images' sub-folder.
 
 ## Further comments:
 The 'images' sub-folder contain example images, and the 'GTairlights' sub-folder contains ground truth airlight colors for images containing regions of sky.
-This code uses the nearest neighbors search engine by Shai Bagon named ANN. For convinience, it appears as-is in the ann_wrapper sub-folder.
+This code uses the nearest neighbors search engine by Shai Bagon, named ANN. For convinience, it appears as-is in the ann_wrapper sub-folder.
 
 The code is provided as-is for academic use only and without any guarantees. Please contact the author to report any bugs. Written by [Yuval Bahat](http://www.wisdom.weizmann.ac.il/~ybahat/).
