@@ -1,10 +1,18 @@
+% Estimating the airlight for an image in the 'images' sub-folder. Then
+% displaying the estimated airlight, along with the image. 
+% 
+% A ground truth airlight can also be displayed for comparison. The GT airlight can be
+% manually extracted by the user, or it can be taken from the corresponding
+% file in the GTairlights sub-folder, if such file exists.
+
 imageName = 'cones.png';
+reextractAirlight = false;   % If true, manually extract the airlight color. Otherwise, use the pre-determined color, if exists.
+
 addpath(genpath(pwd));
 image2dehaze = im2double(imread(imageName));
 estimatedAirlight = AirlightUsingPatchRecurrence(image2dehaze);
 
 %% Displaying the estimated Airlight (and Ground truth airlight, if exists)
-reextractAirlight = false;   % If true, manually extract the airlight color. Otherwise, use the pre-determined color, if exists.
 
 if reextractAirlight
     [GTairlight,GTairlightCovariance] = manuallyExtractAirlight(image2dehaze);
