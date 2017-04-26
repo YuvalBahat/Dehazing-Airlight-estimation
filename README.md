@@ -12,7 +12,7 @@ A script for testing the airlight estimation. Estimated airlight is presented al
 Serially computing the airlight color for all images in the 'images' sub-folder. Comparing the estimated airlights with the pre-determined GT airlights for images that contain a region of sky, and presenting the mean distance in RGB space.
 
 
-
+## Further comments:
 The 'images' sub-folder contain example images, and the 'GTairlights' sub-folder contains ground truth airlight colors for images containing regions of sky.
 This code uses the nearest neighbors search engine by Shai Bagon named ANN. For convinience, it appears as-is in the ann_wrapper sub-folder.
 
