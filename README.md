@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-Haze Airlight Color Estimation
-
-Airlight estimation according to "Blind Dehazing Using Internal Patch Recurrence"
-=======
 # Haze Airlight Color Estimation
 
 Matlab code implementing the Airlight color estimation part of the [ICCP 2016 paper "Blind Dehazing Using Internal Patch Recurrence"](http://www.wisdom.weizmann.ac.il/~vision/BlindDehazing/blindDehazing_ICCP2016.pdf).
@@ -22,4 +17,3 @@ The 'images' sub-folder contain example images, and the 'GTairlights' sub-folder
 This code uses the nearest neighbors search engine by Shai Bagon, named ANN. For convinience, it appears as-is in the ann_wrapper sub-folder.
 
 The code is provided as-is for academic use only and without any guarantees. Please contact the author to report any bugs. Written by [Yuval Bahat](http://www.wisdom.weizmann.ac.il/~ybahat/).
->>>>>>> origin/master
