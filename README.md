@@ -6,11 +6,13 @@ Tested on Matlab 2016a working on Windows.
 If you find our work useful in your research or publication, please cite it:
 
 ```
-@article{bahat2018confidence,
-  title={Confidence from Invariance to Image Transformations},
-  author={Bahat, Yuval and Shakhnarovich, Gregory},
-  journal={arXiv preprint arXiv:1804.00657},
-  year={2018}
+@inproceedings{bahat2016blind,
+  title={Blind dehazing using internal patch recurrence},
+  author={Bahat, Yuval and Irani, Michal},
+  booktitle={Computational Photography (ICCP), 2016 IEEE International Conference on},
+  pages={1--9},
+  year={2016},
+  organization={IEEE}
 }
 ```
 ----------
