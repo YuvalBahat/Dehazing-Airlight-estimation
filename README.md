@@ -3,6 +3,18 @@
 Matlab code implementing the Airlight color estimation part of the [ICCP 2016 paper "Blind Dehazing Using Internal Patch Recurrence"](http://www.wisdom.weizmann.ac.il/~vision/BlindDehazing/blindDehazing_ICCP2016.pdf).
 Tested on Matlab 2016a working on Windows.
 
+If you find our work useful in your research or publication, please cite it:
+
+```
+@article{bahat2018confidence,
+  title={Confidence from Invariance to Image Transformations},
+  author={Bahat, Yuval and Shakhnarovich, Gregory},
+  journal={arXiv preprint arXiv:1804.00657},
+  year={2018}
+}
+```
+----------
+
 ## Functions:
 ### 1. AirlightUsingPatchRecurrence(orgImage):
 The core function estimating the haze airlight color in the input image. The input image should be in the form of 3 (RGB) channels (double, values in the range of [0,1]).
